@@ -1,0 +1,8 @@
+<h1>Герои России</h1>
+<div class="card-container">
+  <div *ngFor="let person of people" class="card">
+    <img [src]="person.imageUrl" />
+    <h3>{{ person.name}}</h3>
+    <button (click)="viewDetails(person)">Подробнее</button>
+  </div>
+</div>
